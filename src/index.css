@@ -39,6 +39,7 @@ img {
 
 .book img {
   border-radius: 0.5rem;
+  width: 200px;
 }
 .book h4 {
   color: #617d98;
