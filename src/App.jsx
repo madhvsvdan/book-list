@@ -1,9 +1,16 @@
 import React from 'react';
 
+const title = 'Deep Work';
+const author = 'Cal Newport';
+const image =
+  'https://images-eu.ssl-images-amazon.com/images/I/41UMGAFVUTL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg';
+
 function App() {
   return (
     <div>
-      <section>
+      <section className='booklist'>
+        <Book />
+        <Book />
         <Book />
       </section>
     </div>
@@ -12,24 +19,12 @@ function App() {
 
 const Book = () => {
   return (
-    <article>
-      <Image />
-      <Title />
-      <Author />
+    <article className='book'>
+      <img src={image} alt='Book Image' />
+      <h1>{title}</h1>
+      <h4>{author}</h4>
     </article>
   );
 };
-
-const Image = () => {
-  return (
-    <img
-      src='https://images-na.ssl-images-amazon.com/images/I/41UMGAFVUTL._SX319_BO1,204,203,200_.jpg'
-      alt='Book Image'
-    />
-  );
-};
-
-const Title = () => <h1>Deep Work</h1>;
-const Author = () => <h4>Cal Newport</h4>;
 
 export default App;
