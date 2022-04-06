@@ -12,16 +12,17 @@ body {
 }
 
 .booklist {
-  width: 90vw;
+  width: fit-content;
   max-width: 1200px;
-  margin: 4rem auto;
+  margin: 2rem auto;
   display: grid;
-  grid-gap: 3rem;
+  grid-gap: 2rem;
 }
 
 @media screen and (min-width: 768px) {
   .booklist {
     grid-template-columns: repeat(3, 1fr);
+    align-items: start;
   }
 }
 
@@ -29,7 +30,7 @@ body {
   background: #fff;
   border-radius: 0.5rem;
   padding: 1rem 2rem;
-  /* text-align: center; */
+  text-align: start;
 }
 
 .book h1,
@@ -39,7 +40,7 @@ img {
 
 .book img {
   border-radius: 0.5rem;
-  width: 200px;
+  max-width: 300px;
 }
 .book h4 {
   color: #617d98;
